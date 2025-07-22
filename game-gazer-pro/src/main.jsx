@@ -10,7 +10,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<layout />}>
+        <Route path="/" element={<Layout />}>
           <Route index element={<App />}/>
           <Route path="game/:id" element={<DetailView/>}/>
           <Route path="*" element={

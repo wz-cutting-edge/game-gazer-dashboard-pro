@@ -2,7 +2,7 @@ import {BarChart, Bar, XAxis, YAxis, Tooltip, PieChart, Pie, Cell} from 'rechart
 const Charts = ({games}) =>{
     const genreCounts={};
     games.forEach(game =>{
-        game.genres.forEach(genres =>{
+        game.genres.forEach(genre =>{
             genreCounts[genre.name] = (genreCounts[genre.name] || 0)+1;
         });
     });
