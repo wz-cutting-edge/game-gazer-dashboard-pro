@@ -14,7 +14,7 @@ createRoot(document.getElementById('root')).render(
           <Route index element={<App />}/>
           <Route path="game/:id" element={<DetailView/>}/>
           <Route path="*" element={
-            <main className="whole-page">
+            <main className="centered-404">
               <h1>404 - Page Not Found</h1>
               <p>How did you get here? This page doesn't exist. Go home.</p>
               <Link to="/">Teleport Home</Link>

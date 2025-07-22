@@ -14,23 +14,29 @@ const Charts = ({games}) =>{
         return {label, count};
     });
 
-    return(
+    return (
         <div className="Charts">
-            <h4>Games by Genre</h4>
-            <BarChart width={400} height={250} data={genreData}>
-                <XAxis dataKey="genre"/>
+            <div className="chart-row">
+            <div className="chart-item">
+                <h4>Games by Genre</h4>
+                <BarChart width={350} height={250} data={genreData}>
+                <XAxis dataKey="genre" />
                 <YAxis />
-                <Tooltip/>
-                <Bar dataKey="count" fill="#60a5fa"/>
-            </BarChart>
-            <h4>Rating Distribution</h4>
-            <BarChart width={400} height={250} data={ratingBuckets}>
-                <XAxis dataKey="label"/>
+                <Tooltip />
+                <Bar dataKey="count" fill="#60a5fa" />
+                </BarChart>
+            </div>
+            <div className="chart-item">
+                <h4>Rating Distribution</h4>
+                <BarChart width={350} height={250} data={ratingBuckets}>
+                <XAxis dataKey="label" />
                 <YAxis />
-                <Tooltip/>
-                <Bar dataKey="count" fill="#10b981"/>
-            </BarChart>
+                <Tooltip />
+                <Bar dataKey="count" fill="#10b981" />
+                </BarChart>
+            </div>
+            </div>
         </div>
-    )
+        );
 }
 export default Charts

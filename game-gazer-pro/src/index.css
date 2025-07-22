@@ -29,7 +29,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: inherit;
 }
-
 p {
   margin: 0;
 }
@@ -40,7 +39,6 @@ a {
   text-decoration: inherit;
   transition: color 0.3s ease;
 }
-
 a:hover {
   color: #90cdf4;
 }
@@ -79,20 +77,16 @@ input, select {
     color: #213547;
     background-color: #f8fafc;
   }
-  
   a {
     color: #4299e1;
   }
-  
   a:hover {
     color: #3182ce;
   }
-  
   button {
     background-color: #e2e8f0;
     color: #2d3748;
   }
-  
   button:hover {
     background-color: #cbd5e0;
   }
