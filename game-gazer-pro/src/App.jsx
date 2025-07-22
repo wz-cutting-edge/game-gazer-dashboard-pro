@@ -5,6 +5,8 @@ import Stats from '../components/Stats'
 import GameList from '../components/GameList'
 import SearchBar from '../components/SearchBar'
 import GenreFilter from '../components/GenreFilter'
+import Charts from './components/Charts';
+import SideBar from './components/SideBar';
 
 function App() {
   const [games, setGames] = useState([]);
@@ -30,6 +32,9 @@ function App() {
 
   return (
     <div>
+      <div className='SideBar'>
+        <SideBar/>
+      </div>
       <div className='header'>
         <div className='header-content'>
           <h2>GG</h2>
@@ -41,6 +46,8 @@ function App() {
       <div className='stats'>
         <h3>STATS</h3>
         <Stats games={filteredGames} />
+        <h4>CHARTS</h4>
+        <Charts/>
       </div>
 
       <div className='filter'>
