@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import { fetchGames, fetchGenres } from '../utils/rawgAPI';
-import Stats from '../components/Stats'
-import GameList from '../components/GameList'
-import SearchBar from '../components/SearchBar'
-import GenreFilter from '../components/GenreFilter'
+import { fetchGames, fetchGenres } from './utils/rawgAPI';
+import Stats from './components/Stats'
+import GameList from './components/GameList'
+import SearchBar from './components/SearchBar'
+import GenreFilter from './components/GenreFilter'
 import Charts from './components/Charts';
 import SideBar from './components/SideBar';
 
@@ -32,9 +32,7 @@ function App() {
 
   return (
     <div>
-      <div className='SideBar'>
         <SideBar/>
-      </div>
       <div className='header'>
         <div className='header-content'>
           <h2>GG</h2>
@@ -47,7 +45,7 @@ function App() {
         <h3>STATS</h3>
         <Stats games={filteredGames} />
         <h4>CHARTS</h4>
-        <Charts/>
+        <Charts games={filteredGames} />
       </div>
 
       <div className='filter'>

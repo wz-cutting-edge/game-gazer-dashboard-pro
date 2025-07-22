@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import Layout from './routes/Layout'
 import DetailView from './routes/DetailView'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -17,9 +17,7 @@ createRoot(document.getElementById('root')).render(
             <main className="whole-page">
               <h1>404 - Page Not Found</h1>
               <p>How did you get here? This page doesn't exist. Go home.</p>
-              <Link>
-              Teleport Home
-              </Link>
+              <Link to="/">Teleport Home</Link>
             </main>
           }/>
         </Route>

@@ -1,8 +1,8 @@
 import {BarChart, Bar, XAxis, YAxis, Tooltip, PieChart, Pie, Cell} from 'recharts'
 const Charts = ({games}) =>{
     const genreCounts={};
-    games.forEach(game =>{
-        game.genres.forEach(genre =>{
+    games.forEach(game => {
+        game.genres.forEach(genre => {
             genreCounts[genre.name] = (genreCounts[genre.name] || 0)+1;
         });
     });
