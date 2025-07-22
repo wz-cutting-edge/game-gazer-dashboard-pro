@@ -38,7 +38,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-
+![gg dash pro](https://github.com/user-attachments/assets/9bc67ff1-54c6-4863-8dd5-89dcafbd3e92)
 
 GIF created with [ScreenToGif](https://www.screentogif.com/) for Windows
 
